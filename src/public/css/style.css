@@ -1,0 +1,153 @@
+:root {
+  --color-a: #db5b53;
+  --color-b: #d1db5e;
+  --color-c: #db48c0;
+  --color-d: #1cbe5a;
+  --color-e: #953ddb;
+  --background-color: rgb(41, 40, 40);
+  --text-color: rgb(255, 255, 255);
+}
+
+body {
+  background-color: var(--background-color);
+  border: 0;
+  margin: 0;
+  font-family: "Sora", Fallback, sans-serif;
+  color: var(--text-color);
+}
+
+#center-wrapper {
+  position: relative;
+  top: 20vh;
+  width: 100vw;
+  display: flex;
+  margin-bottom: 150px;
+  align-content: center;
+  flex-wrap: nowrap;
+}
+
+#center-wrapper > ul {
+  display: flex;
+  flex-wrap: wrap;
+  list-style-type: none;
+}
+
+#center-image {
+  display: flex;
+  justify-content: center;
+  flex-grow: 1;
+  width: 500px;
+}
+
+#center-image > img {
+  width: 400px;
+  height: 400px;
+  padding: 4px;
+  border-radius: 50%;
+  border: 6px solid var(--color-d);
+}
+
+#center-text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
+  flex-grow: 1;
+  width: 500px;
+}
+
+#center-text > h1 {
+  font-size: 44px;
+  margin-bottom: 0px;
+}
+
+#center-text > h2 {
+  font-size: 40px;
+  color: var(--color-d);
+  margin-bottom: -20px;
+}
+
+#center-text > h3 {
+  color: var(--color-d);
+}
+
+#nav {
+  display: flex;
+  column-gap: 15px;
+  list-style-type: none;
+  justify-content: flex-start;
+  align-content: flex-start;
+}
+
+#projects-grid {
+  position: relative;
+  width: 90%;
+  left: 10vh;
+  display: flex;
+  height: 30vh;
+  top: 35vh;
+  gap: 10px;
+}
+
+#projects-grid > div {
+  border: 1px solid black;
+}
+
+#projects-grid > div > div {
+  border: 1px solid green;
+}
+#projects-grid > div > div > div {
+  border: 1px solid red;
+}
+
+.link {
+  color: var(--color-e);
+  text-decoration: none;
+  cursor: pointer;
+}
+
+#projects-grid > ul {
+  display: flex;
+  flex-wrap: wrap;
+  list-style-type: none;
+}
+
+#projects-grid > ul > li {
+  height: 100%;
+  flex-grow: 1;
+}
+
+.overlay:hover {
+  background-color: transparent;
+}
+
+#projects-grid > ul > li > img {
+  max-height: 100%;
+  min-width: 100%;
+  object-fit: cover;
+  vertical-align: bottom;
+}
+
+.overlay {
+  position: relative;
+  height: 100%;
+  width: 100%;
+  top: -100%;
+  background-color: black;
+  opacity: 0.6;
+  display: flex;
+  align-items: center;
+  align-content: center;
+  justify-content: center;
+  transition: background-color 0.3s ease-out;
+}
+
+.overlay > p {
+  font-size: 28px;
+}
+
+#projects-header {
+  width: 100%;
+  text-align: center;
+  color: var(--color-d);
+}
